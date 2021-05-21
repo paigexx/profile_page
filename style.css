@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, h2, h3, a, p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+    font-size: 1.7em;
+}
+
+h2{
+    font-size: 1.1em;
+}
+
+h3{
+    font-size: 1em;
+    color: lightsalmon;
+}
+
+p{
+    font-size: .9em;
+}
+
+a:hover{
+    color:darkgray;
+    text-decoration: none;
+}
+
+/* nav bar */
+.header-container{
+    background-color: black;
+}
+
+#header{
+    height: 6em;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+}
+
+nav{
+    display: flex;
+    gap: 40px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap:1em;
+    list-style-type: none;
+    color: white;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+#header button{
+    padding: 5px 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 12px;
+}
+
+#header button:hover{
+    background-color: darkgray;
+    border: none;
+}
+
+.header-container h1{
+    font-size: 40px;
+}
+
+/* body */
+#body-container{
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color:white;
+    position: relative;
+    display: flex;
+}
+
+/* column spacing  */
+.col1{
+    flex: 2;
+    margin: 2em 2em 2em 0;
+}
+
+.col2{
+    flex: 1;
+    margin: 2em 0 2em 2em;
+}
+
+/* The box with border */
+.content-container{
+    border: lightgray 3px solid;
+    background-color: white;
+    margin-bottom: 3em;
+}
+
+/* The div with the main div text inside */
+.textbox{
+    line-height: 2em;
+    margin: 2.3em 0 0 3em;
+    padding-bottom: 2em;
+}
+
+.textbox a{
+    color: lightgray
+}
+
+.textbox a:hover{
+    color:darkgray;
+}
+
+/* Div Banners */
+.banner-pink{
+    height: 7.5em;
+    background-color: lightsalmon;
+}
+
+.banner-grey{
+    height: 4.2em;
+    background-color: lightgray;
+    padding: 1em 0 1em 3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+/* Any rounded pictures, icons, or avatars will be assigned class icon */
+.icon{
+    height: 3.5em;
+    border-radius: 50%;
+}
+
+/* profile specs - col1 */
+.profile-container{
+    position: relative;
+}
+.avatar{
+    height: 100px;
+    position: absolute;
+    margin: 3em;
+}
+
+.details{
+    font-weight: bolder;
+    padding:10px 0;
+}
+.profile_icon{
+    height: 15px;
+    padding-right: 10px;
+}
+
+/* Column 2  */
+
+/* User Connection Requests */
+
+.user_row{
+    display: flex;
+    align-items: center;
+}
+.user_name_pic{
+    display: flex;
+    align-items: center;
+}
+.name{
+    padding: 1em;
+}
+
+.accept_decline img{
+    height: 2em;
+}
+
+.notification{
+    border-radius: 12px;
+    padding: .7em 1.2em;
+    border: white solid;
+    margin: 0 1em;
+    background-color: lightgray;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+}
+
+.notification:hover{
+    background-color: darkgray
+}
