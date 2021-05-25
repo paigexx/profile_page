@@ -39,7 +39,7 @@
           <div class="banner-pink">
           </div>
           <div class="textbox">
-            <h1>Paige Jones</h1>
+            <h1 id="profile_name">Paige Jones</h1>
             <p class="details">
               <img src="icons/map-marker.png" alt="marker" class="profile_icon" />Kansas City
             </p>
@@ -59,14 +59,14 @@
             <h3>May-Aug 2021</h3>
             <p>
               A full stack, full-time bootcamp focusing on many different
-              languages and tools including HTML, CSS, Javascript, Python, Java,
+              languages and tools decluding HTML, CSS, Javascript, Python, Java,
               and MERN.
             </p>
             <br />
             <h2>University of Kansas</h2>
             <h3>2012-2016</h3>
             <p>
-              Earned a bachelor of Strategic Commubincations from the University
+              Earned a bachelor of Strategic Commubdecations from the University
               of Kansas.
             </p>
           </div>
@@ -79,51 +79,40 @@
         <div class="content-container">
           <div class="banner-grey">
             <h2>Connection Requests</h2>
-            <button class="col2-bttn notification">2</button>
+            <button class="col2-bttn notification request_num">3</button>
           </div>
 
           <div class="textbox">
-            <div class="user_row">
+            <div class="user_row user_row_1">
               <div class="user_name_pic">
                 <img src="images/jane-m.jpg" alt="" class="icon" />
                 <h3 class="name">Jane Jones</h3>
               </div>
               <div class="accept_decline">
-                <img src="icons/accept-circle.png" alt="" class="icon" />
-                <img src="icons/close-circle.png" alt="" class="icon"/>
+                <img src="icons/accept-circle.png" alt="" class="icon accept" onclick="remove(user_row_1); request_dec(); conn_inc()"/>
+                <img src="icons/close-circle.png" alt="" class="icon" onclick="remove(user_row_1); request_dec()"/>
               </div>
             </div>
 
-            <div class="user_row">
+            <div class="user_row user_row_2">
               <div class="user_name_pic">
                 <img src="images/arry-s.jpg" alt="" class="icon"/>
                 <h3 class="name">Arry Smith</h3>
               </div>
               <div class="accept_decline">
-                <img src="icons/accept-circle.png" alt="" class="icon"/>
-                <img src="icons/close-circle.png" alt="" class="icon"/>
+                <img src="icons/accept-circle.png" alt="" class="icon accept" onclick="remove(user_row_2); request_dec(); conn_inc()"/>
+                <img src="icons/close-circle.png" alt="" class="icon" onclick="remove(user_row_2); request_dec()"/>
               </div>
             </div>
 
-            <div class="user_row">
+            <div class="user_row user_row_3">
               <div class="user_name_pic">
                 <img src="images/adrien-s.jpg" alt="" class="icon"/>
                 <h3 class="name">Adrien Doe</h3>
               </div>
               <div class="accept_decline">
-                <img src="icons/accept-circle.png" alt="" class="icon"/>
-                <img src="icons/close-circle.png" alt="" class="icon"/>
-              </div>
-            </div>
-
-            <div class="user_row">
-              <div class="user_name_pic">
-                <img src="icons/user-circle.png" alt="" class="icon"/>
-                <h3 class="name">User Name</h3>
-              </div>
-              <div class="accept_decline">
-                <img src="icons/accept-circle.png" alt="" class="icon"/>
-                <img src="icons/close-circle.png" alt="" class="icon"/>
+                <img src="icons/accept-circle.png" alt="" class="icon accept" onclick="remove(user_row_3); request_dec(); conn_inc()"/>
+                <img src="icons/close-circle.png" alt="" class="icon" onclick="remove(user_row_3); request_dec()"/>
               </div>
             </div>
           </div>
@@ -132,7 +121,7 @@
         <div class="content-container">
           <div class="banner-grey">
             <h2>Your Connections</h2>
-            <button class="col2-bttn notification">500+</button>
+            <button class="col2-bttn notification conn_num">500</button>
           </div>
           <div class="textbox">
             <div class="user_name_pic user_row">
@@ -146,7 +135,7 @@
             </div>
 
             <div class="user_name_pic user_row">
-              <img src="images/phil-s.jpg"" class="icon"/>
+              <img src="images/phil-s.jpg" class="icon"/>
               <h3 class="name">Phil Phillips</h3>
             </div>
 
