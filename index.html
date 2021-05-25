@@ -13,6 +13,7 @@
     <title>Profile</title>
   </head>
   <body>
+    <!-- nav bar -->
     <div class="header-container">
       <div id="header">
         <nav>
@@ -27,7 +28,11 @@
       </div>
     </div>
 
+    <!-- body -->
+
     <div id="body-container">
+
+      <!-- column 1  -->
       <div class="col1">
         <div class="content-container profile-container">
           <img src="icons/user-circle.png" alt="avatar" class="avatar" />
@@ -41,8 +46,8 @@
             <p>Thinker | Creative | Coffee Enthusiast</p>
             <p>Tackling one algorithim at a time!</p>
             <p class="details">
-              <img src="icons/gear.png" alt="edit icon" class="profile_icon" /><a href=""
-                >edit profile</a
+              <img src="icons/gear.png" alt="edit icon" class="profile_icon" /><a id="edit_profile" href=""
+                onclick="change_name()">edit profile</a
               >
             </p>
           </div>
@@ -67,6 +72,8 @@
           </div>
         </div>
       </div>
+
+      <!-- column 2 -->
 
       <div class="col2">
         <div class="content-container">
@@ -150,11 +157,10 @@
             <div class="extended_content_container">
               <a href="">View More</a>
             </div>
-
-    
           </div>
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
